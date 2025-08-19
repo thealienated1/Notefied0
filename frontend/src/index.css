@@ -1,0 +1,22 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.white-bullets {
+  list-style-type: disc;
+  color: white !important;
+}
+
+.white-bullets li::marker {
+  color: white !important;
+}
+
+.file-link {
+  color: #5062e7;
+  text-decoration: underline;
+}
+
+.file-link:hover {
+  color: #677ff6;
+}

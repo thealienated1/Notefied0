@@ -1,0 +1,29 @@
+{
+  "name": "notesify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:user\" \"npm run dev:notes\" \"npm run dev:frontend\"",
+    "dev:user": "cd user-service && npm run dev",
+    "dev:notes": "cd notes-service && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd user-service && npm install && cd ../notes-service && npm install && cd ../frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.14.0",
+    "react-color": "^2.19.3"
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.9.0",
+    "@svgr/webpack": "^8.1.0",
+    "concurrently": "^8.2.2"
+  }
+}
